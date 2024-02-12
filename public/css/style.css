@@ -1,0 +1,239 @@
+:root {
+    --light1: #94F4F0;
+    --mid1: #29aaa6;
+    --dark1: #0c7370;
+    --light2: #fff;
+    --mid2: #717171;
+    --dark2: #363636;
+    --light3: #a38e9b;
+    --mid3: #C785AE;
+    --light4: #AAC864;
+    --deSat4: #888e78;
+    background: black;
+    background: linear-gradient(0deg, rgba(9, 9, 9, 1) 0%, rgba(113, 113, 113, 1) 100%);
+}
+
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+#test {
+    margin: 0;
+    padding: 0;
+    background: black;
+    background: linear-gradient(0deg, rgba(9, 9, 9, 1) 0%, rgba(113, 113, 113, 1) 100%);
+    display: flex;
+    flex-direction: column;
+    /* min-height: 100vh; */
+}
+
+.bodyClass {
+    flex: 1;
+}
+
+#navbar {
+    background-color: var(--dark2);
+    border: 0px solid var(--mid1);
+    border-bottom: 3px solid var(--mid1);
+    color: var(--mid1);
+    padding: 5px 10px;
+}
+
+#footer {
+    /* position: fixed; */
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: var(--light2);
+}
+
+#name {
+    font-family: 'Dai Banna SIL', serif;
+    font-style: italic;
+    margin-bottom: 0px;
+    text-decoration: none;
+    color: var(--mid1);
+}
+
+#home {
+    color: var(--mid1);
+    padding: 3%;
+}
+
+
+
+.navBtn {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+    text-decoration: none;
+    color: var(--mid1);
+    padding-right: 20px;
+
+}
+
+/* #loginBtn {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+    text-decoration: none;
+    padding: 2%;
+} */
+
+#logoutBtn{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: x-large;
+    color: white;
+    padding-bottom: 0%;
+    color: var(--light2);
+}
+
+.accForm {
+    border: solid var(--mid1);
+    border-width: 0px 2px 0px 2px;
+    color: var(--light1);
+    padding-top: 3%;
+    margin: 0%;
+    /* align-content: center; */
+    height: 100%;
+    border-bottom: 3px solid var(--mid1);
+}
+
+.textbox1 {
+    width: 100%;
+}
+
+.label1 {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+}
+
+
+.signForm {
+    padding: 0%;
+    margin: 0;
+}
+
+.inpRow {
+    padding-bottom: 20px;
+}
+
+.customBtn {
+    color: var(--dark1);
+    background-color: var(--light1);
+    width: 20%
+}
+
+.customBtn:hover {
+    color: var(--light1);
+    background-color: var(--dark1);
+    /* border: 2px solid var(--light1); */
+}
+
+.cusForm {
+    padding: 3% 2% 2% 2%;
+    margin-top: 3%;
+    background: rgb(10, 64, 62);
+    background: radial-gradient(circle, rgba(10, 64, 62, 1) 0%, rgba(12, 115, 112, 1) 100%);
+    color: var(--light1);
+    /* border: 2px solid var(--light1); */
+    border-radius: 20px;
+}
+
+.formFont {
+    font-size: x-large;
+}
+
+.formFont label {
+    color: white;
+}
+
+#editBtn {
+    background-color: black;
+    color: #b8b8b8;
+    font-size: large;
+    padding: 0% 10px;
+    width: fit-content;
+}
+
+.reportBtns {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    padding: 0% 10px;
+    width: fit-content;
+}
+
+#pendingBtn {
+    background-color: rgb(229, 52, 52);
+}
+
+#resolveBtn {
+    background-color: rgb(61, 164, 61);
+}
+
+#closeBtn {
+    background-color: black;
+    color: #b8b8b8;
+}
+
+
+.textbox2 {
+    width: 95%;
+}
+
+#cusW {
+    width: 90%;
+    margin-top: 2%;
+    height: 100vh;
+}
+
+#cusW ul li {
+    margin-bottom: 2%;
+}
+
+.titleBar {
+    background-color: var(--dark2);
+    padding: 4px 0%;
+    border: 2px solid var(--light1);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: var(--light1);
+}
+
+.titleBar h1 {
+    font-size: x-large;
+    margin-bottom: 0%;
+}
+
+.infoBody {
+    background-color: var(--mid2);
+    padding: 1% 2%;
+    width: 100%;
+}
+
+.names {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+}
+
+/* pending', 'resolvded', 'closed' */
+.pending {
+    color: var(--mid3);
+}
+
+.pendingBody {
+    background-color: var(--light3);
+}
+
+.resolved {
+    color: var(--light4);
+}
+
+.resolvedBody {
+    background-color: var(--deSat4);
+}
+
+.closed {
+    color: var(--mid2);
+}

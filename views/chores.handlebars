@@ -1,0 +1,49 @@
+<div class="container-fluid align-items-center" id="cusW">
+    <div class="row col-md-8">
+        <h2 class="text-white">
+            Office Chore List
+        </h2>
+
+        <ul id="list">
+            {{#each chores as |chore|}}
+            <li class="text" id="{{chore.id}}">
+                <div class="titleBar row justify-content-between">
+                    <h1 class="col text-start">{{chore.chore_name}}</h1>
+                </div>
+                <div class="infoBody" hidden>
+                    <p>{{chore.chore_description}}</p>
+                    <p class="text-end names mb-0">Assigned to: <b> {{chore.user.first_name}}
+                            {{chore.user.last_name}}</b></p>
+                </div>
+            </li>
+            {{/each}}
+        </ul>
+        {{#if is_manager}}
+            
+        <form id="choreForm" class="form mb-4 mx-2">
+            <div class=" mb-4 mx-2">
+                <label for="choreName" class="form-label text-white">Add Chore:</label>
+                <input type="text" name="choreName" class="form-control">
+            </div>
+            <div class=" mb-4 mx-2">
+                <label for="choreDescription" class="form-label text-white">Chore Description:</label>
+                <textarea type="text" name="choreDescription" class="form-control" rows="3"></textarea>
+            </div>
+            <div class="mb-4 mx-2">
+                <label for="user" class="form-label text-white">Assigned to:</label>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Choose Employee</option>
+                    {{#each users as |user|}}
+                    <option value="{{user.first_name}}{{user.last_name}} ">{{user.first_name}} {{user.last_name}}</option>
+                    {{/each}}
+                </select>
+                <button type="button" class="btn btn-secondary mt-3">Submit</button>
+            </div>
+
+        </form>
+        {{/if}}
+
+    </div>
+</div>
+<script src="./js/list.js"></script>
+<script src="./js/assignChore.js"></script>
